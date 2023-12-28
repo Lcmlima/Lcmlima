@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bem vindo</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background-image: url('midpage.jpg'); /* Substitua pelo caminho da sua imagem de fundo */
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+        }
+
+        #header {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.7); /* Fundo preto translúcido no cabeçalho */
+            color: white;
+            border-radius: 5px;
+        }
+
+        #content {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.7); /* Fundo branco translúcido no meio */
+            border-radius: 10px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #ff4500; /* Cor de fundo do botão */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #cc3700; /* Cor de fundo do botão ao passar o mouse */
+        }
+
+        audio {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">Bem vindo a Bloody Nigth</div>
+
+    <div id="content">
+        <h1>Explore o mundo de jujutsu Kaisen neste chatrpg</h1>
+        <audio controls autoplay>
+            <source src='fp.mp3' type='Fp/mp3'> <!-- Substitua pelo caminho do seu áudio -->
+            Seu navegador não suporta o elemento de áudio.
+        </audio>
+        <button onclick="redirect()">Explore</button>
+    </div>
+
+    <script>
+        function redirect() {
+            window.location.href = 'midpage-cadastro.html'; /* Substitua pelo caminho da sua nova página HTML */
+        }
+    </script>
+</body>
+</html>
